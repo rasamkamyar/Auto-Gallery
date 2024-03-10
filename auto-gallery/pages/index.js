@@ -1,3 +1,7 @@
-export default function Home() {
-  return <h1>auto galery</h1>;
+import HomePage from "@/components/HomePage";
+
+function Home() {
+  return <HomePage />;
 }
+
+export default Home;
