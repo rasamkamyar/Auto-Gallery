@@ -1,12 +1,10 @@
 import CarCard from "@/components/modules/CarCard";
-import DataContext from "@/context/dataContext";
 import { useRouter } from "next/router";
-import { useContext } from "react";
+import data from "../../data/carsData";
 
 function FilterCars() {
   const router = useRouter();
   const [min, max] = router.query.slug || [];
-  const { data } = useContext(DataContext);
   const filtered = data.filter((item) => item.price > min && item.price < max);
 
   if (!filtered.length)
