@@ -1,11 +1,9 @@
-import DataContext from "@/context/dataContext";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Style from "./index.module.css";
 import { useRouter } from "next/router";
 
 function SearchBar() {
   const router = useRouter();
-  const { data } = useContext(DataContext);
   const [min, setMin] = useState("");
   const [max, setMax] = useState("");
 
@@ -33,9 +31,7 @@ function SearchBar() {
           onChange={(e) => setMax(e.target.value)}
         />
       </div>
-      {/* <Link href={"/slug"}> */}
       <button onClick={handleSearch}>Search</button>
-      {/* </Link> */}
     </div>
   );
 }

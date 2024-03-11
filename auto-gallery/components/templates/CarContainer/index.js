@@ -10,6 +10,7 @@ function CarContainer({ data }) {
       ))}
     </div>
   );
+  
 }
 
 export default CarContainer;
