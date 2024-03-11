@@ -1,4 +1,4 @@
-import DataContext from "@/context/dataContext";
+import DataContext from "@/context/DataContext";
 import { useContext } from "react";
 import Style from "./index.module.css";
 import Location from "@/components/icons/Location";
