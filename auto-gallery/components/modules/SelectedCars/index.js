@@ -1,10 +1,8 @@
-import DataContext from "@/context/DataContext";
-import { useContext } from "react";
 import Style from "./index.module.css";
 import Location from "@/components/icons/Location";
+import data from "../../../data/carsData";
 
 function SelectedCars() {
-  const { data } = useContext(DataContext);
   const selectedCar = data.slice(0, 3);
 
   return (
