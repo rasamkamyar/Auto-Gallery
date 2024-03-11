@@ -1,1 +1,14 @@
-
+.seeAllBtn {
+  font-weight: 780;
+  font-size: 1rem;
+  padding: 15px 0;
+  background-color: #befa00;
+  width: 440px;
+  margin: 10px auto;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
